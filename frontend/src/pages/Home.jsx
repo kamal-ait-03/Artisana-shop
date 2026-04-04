@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Hero from '../components/hero'
+import LatestCollection from '../components/LatestCollection';
 
 const Home = () => {
+    
   return (
     <div>
       <Hero />
-       
+      <LatestCollection/>
     </div>
   );
 }
