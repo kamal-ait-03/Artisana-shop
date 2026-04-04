@@ -13,17 +13,17 @@ const Navbar = () => {
 
   // Mobile nav style
   const mobileNavClass = ({ isActive }) =>
-    `py-3 pl-6 border-b border-[#e0d3c2] transition-all duration-300 
+    `py-3 pl-6 text-lg border-b border-[#e0d3c2] transition-all duration-300 
     ${isActive ? 'bg-[#1F5F4A] text-white' : 'text-[#2B2B2B] hover:bg-[#f0e2cf]'}`
 
   return (
-    <div className='flex items-center justify-between py-5 px-4 font-medium bg-[#F5E9DA] text-[#2B2B2B] shadow-sm'>
+    <div className='flex items-center justify-between py-5 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] font-medium bg-[#F5E9DA] text-[#2B2B2B] shadow-sm'>
 
       {/* Logo */}
       <img src={assets.logo} className='w-36' alt="logo" />
 
       {/* Desktop Menu */}
-      <ul className='hidden sm:flex gap-6 text-sm'>
+      <ul className='hidden sm:flex gap-6 text-base lg:text-lg tracking-wide'>
 
         <NavLink to='/' className={navLinkClass}>
           {({ isActive }) => (
